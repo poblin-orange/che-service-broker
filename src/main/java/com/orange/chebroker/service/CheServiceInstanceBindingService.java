@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
 import com.orange.model.CredentialsRepository;
 
 @Service
-public class CredsServiceInstanceBindingService implements ServiceInstanceBindingService {
+public class CheServiceInstanceBindingService implements ServiceInstanceBindingService {
     private CredentialsRepository credentialsRepository;
 
     @Autowired
-    public CredsServiceInstanceBindingService(CredentialsRepository credentialsRepository) {
+    public CheServiceInstanceBindingService(CredentialsRepository credentialsRepository) {
         this.credentialsRepository = credentialsRepository;
     }
 

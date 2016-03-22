@@ -28,7 +28,7 @@ import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindin
 /**
  * Created by sbortolussi on 07/03/2016.
  */
-public class CredsServiceInstanceBindingServiceTest {
+public class CheServiceInstanceBindingServiceTest {
 
     public static final String API_DIRECTORY_SERVICE = "API_DIRECTORY";
     public static final String DEV_PLAN = "dev";
@@ -52,7 +52,7 @@ public class CredsServiceInstanceBindingServiceTest {
         credentialsRepository.save(SERVICE_PLAN_PROD,"CREDENTIALS_ACCESS_KEY","prodAZERTY");
 
         //when I bind my app to a service API_DIRECTORY instance whose plan is dev
-        CredsServiceInstanceBindingService serviceInstanceBindingService = new CredsServiceInstanceBindingService(credentialsRepository);
+        CheServiceInstanceBindingService serviceInstanceBindingService = new CheServiceInstanceBindingService(credentialsRepository);
         final CreateServiceInstanceBindingResponse response = serviceInstanceBindingService.createServiceInstanceBinding(getCreateServiceInstanceRequestWithServiceAndPlan(SERVICE_PLAN_DEV));
 
         //then I should only get credentials that have been set for dev plan of service API_DIRECTORY
@@ -75,7 +75,7 @@ public class CredsServiceInstanceBindingServiceTest {
         credentialsRepository.save(SERVICE_PLAN_PROD,"CREDENTIALS_ACCESS_KEY","prodAZERTY");
 
         //when I bind my app to a service API_DIRECTORY instance whose plan is dummy
-        CredsServiceInstanceBindingService serviceInstanceBindingService = new CredsServiceInstanceBindingService(credentialsRepository);
+        CheServiceInstanceBindingService serviceInstanceBindingService = new CheServiceInstanceBindingService(credentialsRepository);
         final CreateServiceInstanceBindingResponse response = serviceInstanceBindingService.createServiceInstanceBinding(getCreateServiceInstanceRequestWithServiceAndPlan(SERVICE_PLAN_DUMMY));
 
         //then I should get no credentials

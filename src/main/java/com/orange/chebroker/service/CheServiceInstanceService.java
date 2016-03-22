@@ -13,7 +13,7 @@ import org.springframework.cloud.servicebroker.service.ServiceInstanceService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CredsServiceInstanceService implements ServiceInstanceService {
+public class CheServiceInstanceService implements ServiceInstanceService {
 	@Override
 	public CreateServiceInstanceResponse createServiceInstance(CreateServiceInstanceRequest arg0) {
 		System.out.println("a service instance created.");
