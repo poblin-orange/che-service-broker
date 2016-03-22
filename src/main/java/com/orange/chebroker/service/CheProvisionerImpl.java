@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.orange.chebroker.repository.CfClient;
+import com.orange.chebroker.repository.CheApiClient;
 import com.orange.chebroker.repository.DockerClient;
 
 public class CheProvisionerImpl implements CheProvisioner {
@@ -16,6 +17,9 @@ public class CheProvisionerImpl implements CheProvisioner {
 	
 	@Autowired
 	CfClient cfClient;
+	
+	@Autowired
+	CheApiClient cheApiClient;
 
 	@Override
 	public String createChe() {
