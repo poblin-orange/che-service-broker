@@ -1,14 +1,10 @@
 package com.orange.chebroker.service;
 
-import com.orange.chebroker.model.Credentials;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingRequest;
-import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingResponse;
-import org.springframework.cloud.servicebroker.model.DeleteServiceInstanceBindingRequest;
-import org.springframework.cloud.servicebroker.service.ServiceInstanceBindingService;
 import org.springframework.stereotype.Service;
 
-import com.orange.model.CredentialsRepository;
+import com.orange.chebroker.model.Credentials;
+import com.orange.chebroker.model.CredentialsRepository;
 
 @Service
 public class CheServiceInstanceBindingService implements ServiceInstanceBindingService {
