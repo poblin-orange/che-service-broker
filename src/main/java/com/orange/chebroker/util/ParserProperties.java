@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orange.model.*;
+import com.orange.chebroker.model.*;
 
 public abstract class ParserProperties {
 	/**

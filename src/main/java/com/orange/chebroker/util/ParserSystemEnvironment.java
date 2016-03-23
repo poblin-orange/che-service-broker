@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.orange.model.*;
+import com.orange.chebroker.model.*;
 
 public class ParserSystemEnvironment extends ParserProperties {
 	private Environment environment;

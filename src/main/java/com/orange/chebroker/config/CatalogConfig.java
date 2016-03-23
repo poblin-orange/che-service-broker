@@ -19,15 +19,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.orange.model.PlanMetadata;
-import com.orange.model.PlanPropertyName;
-import com.orange.model.PlansMap;
-import com.orange.model.ServicePropertyName;
-import com.orange.model.ServicesMap;
-import com.orange.util.Environment;
-import com.orange.util.ParserApplicationProperties;
-import com.orange.util.ParserProperties;
-import com.orange.util.ParserSystemEnvironment;
+import com.orange.chebroker.model.PlanMetadata;
+import com.orange.chebroker.model.PlanPropertyName;
+import com.orange.chebroker.model.PlansMap;
+import com.orange.chebroker.model.ServicePropertyName;
+import com.orange.chebroker.model.ServicesMap;
+import com.orange.chebroker.util.Environment;
+import com.orange.chebroker.util.ParserApplicationProperties;
+import com.orange.chebroker.util.ParserProperties;
+import com.orange.chebroker.util.ParserSystemEnvironment;
 
 @Configuration
 public class CatalogConfig {

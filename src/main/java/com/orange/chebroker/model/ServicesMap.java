@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.orange.util.ParserProperties;
+import com.orange.chebroker.util.ParserProperties;
 
 /**
  * map of service id (String) and service properties definitions (Map<ServicePropertyName, String>)
