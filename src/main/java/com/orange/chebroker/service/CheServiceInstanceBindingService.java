@@ -1,18 +1,25 @@
 package com.orange.chebroker.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingRequest;
+import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingResponse;
+import org.springframework.cloud.servicebroker.model.DeleteServiceInstanceBindingRequest;
+import org.springframework.cloud.servicebroker.service.ServiceInstanceBindingService;
 import org.springframework.stereotype.Service;
 
-import com.orange.chebroker.model.Credentials;
-import com.orange.chebroker.model.CredentialsRepository;
+
 
 @Service
 public class CheServiceInstanceBindingService implements ServiceInstanceBindingService {
-    private CredentialsRepository credentialsRepository;
+	
+	private static Logger logger=LoggerFactory.getLogger(CheServiceInstanceBindingService.class.getName());
+	
 
     @Autowired
     public CheServiceInstanceBindingService(CredentialsRepository credentialsRepository) {
-        this.credentialsRepository = credentialsRepository;
+        
     }
 
     @Override
